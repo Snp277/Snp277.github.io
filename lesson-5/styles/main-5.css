@@ -1,0 +1,135 @@
+* {box-sizing: border-box;margin: 0 auto;text-align: center;}
+
+body {
+  font-size: 16px;
+  font-family: "arial", sans-serif;
+
+}
+
+header, nav, main, footer {
+    max-width: 1179px;
+    margin: 5px auto;
+    padding: 0;
+}
+
+header {
+
+    position: relative;
+    background-color:;
+    height: 250px;
+    top: 59px;
+    right: auto;
+    padding:;
+}
+header h1 {
+    font-family: saira;
+    width: 123px;
+    height: 139px;
+    padding: 0px 36px;
+    margin: 0px auto;
+}
+header img {
+    position: absolute;
+    width: 300px;
+    margin: -72px 0px 0px -264px;
+}
+
+
+
+
+    nav ul {
+
+    margin: -80px 0px 0px 160px;
+    padding: 0;
+    text-align: center;
+
+}
+    nav ul li{
+    background-color: lightgray;
+    padding: 7px 0px 7px 0px;
+    border: 0.5px solid;
+    list-style-type: none;
+    }
+    nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+    nav ul li.active a {;}
+    nav ul li a:hover {
+    color: #FFFFFF;
+}
+    main {
+    position: relative;
+    clear: both;
+    background-color:rgba(255, 209, 87, 0.5);;
+    opacity: ;
+    padding: 0px;
+
+}
+    main h2 {
+    text-align: center;
+    color: #000;
+    font-size: 2em;
+    font-weight: bold;
+    width: 96%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main h3{
+ padding:10px;
+
+}
+
+main article img{
+    width:65%;
+
+
+}
+
+
+.highlow {
+    width: 13em;
+    margin: 0 auto;
+    overflow: auto;
+
+}
+
+
+
+
+
+.conditions{
+    width: 12em;
+    margin: 1.1em auto;
+    overflow: auto;
+
+}
+    table {
+    display: none;
+    clear: both;
+}
+
+
+.town-article {
+    font-size: 1em;
+    width: 96%;
+    margin: 2em auto 40px;
+    padding-bottom: 27px;
+    }
+    footer .contact {
+    background-color: lightgray;
+    margin: -40px 0px 0px 0px;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+}
+
+.footer-bar {
+    background-color: darkgray;
+    color: #E6E6E6;
+    font-size: 0.75em;
+    text-align: center;
+    padding: 0;
+    margin: -1px0;
+    border: 1px solid black;
+}
