@@ -1,0 +1,75 @@
+@media only screen and (min-width: 64em ) {
+
+
+  }@media only screen and (min-width: 64em ) {
+
+
+
+    h1, h2, h3, h4 {
+
+      font-family: saira;
+    }
+
+
+header h1{
+
+font-size:70px;}
+
+
+
+nav ul {
+        display: block;
+
+           }
+
+
+nav ul li {
+        float: left;
+        width: 15%;
+        font-size: 1rem;
+        padding: 20px 20px 20px 20px;
+        border-radius: 1px;
+    }
+
+
+ main h2 {
+   font-size:60px; }
+
+
+
+   .weather-summary {
+
+     border: solid;
+     margin: 0px 120px 20px 120px;
+
+   }
+
+
+
+  .current {
+
+    width: 40%;
+
+  }
+
+  .current img {
+    width: 60%;
+    margin: -183px 250px -23px -85px;
+    }
+
+.conditions {
+    width: 100%;
+    font-size: 1rem;
+    margin: -10px 0px 30px 100px;
+}
+
+main article img {
+
+width:40%;
+margin: 32px 60px 19px 30px;
+float: right;
+}
+
+main article {
+  margin: 50px 100px 0px 100px;
+}
