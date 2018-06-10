@@ -48,6 +48,7 @@ nav button {
     border: none;
     font-size: 1.6rem;
     color: #2f4154;
+    z-index: 1;
 }
 
 
