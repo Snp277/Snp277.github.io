@@ -1,140 +1,89 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 64em ) {
 
-    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
 
-    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+  }@media only screen and (min-width: 64em ) {
 
-    section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
 
-    header img {
-        position: absolute;
-        width: 300px;
-        margin: -110px 0px 0px -264px;
+
+    h1, h2, h3, h4 {
+
+      font-family: saira;
     }
 
-h1, h2, h3, h4 {
-
-  font-family: saira;
-}
-header {
-
-    position: relative;
-    height: 250px;
-    top: 61px;
-    right: auto;
-}
-    header h1 {
-    font-size: 50px;
-    padding:0px;
-    width: 75%;
-    margin: 0px 190px;
+    header {
+        position: relative;
+        height: 250px;
+        top: 61px;
+        right: auto;
     }
 
+header h1{
+margin: 0px 250px;
+font-size:70px;}
 
 
-    nav {
-    }
 
-   nav ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+nav ul {
+        display: block;
 
-    nav ul li {
+           }
+
+
+nav ul li {
         float: left;
-        width: 16%;
+        width: 15%;
         font-size: 1rem;
-        border-radius: 14px;
-
-
+        padding: 20px 20px 20px 20px;
+        border-radius: 1px;
     }
 
-     .image-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-        margin: 1.5rem auto;
+
+    .gallery {
+       grid-template-columns: 1fr 1fr 1fr;
+       margin: 1.5rem auto;
     }
 
-    .image-grid figure:hover {
-       box-shadow: 0.5rem 0.5rem 2rem rgba(0,0,0,0.7);
+
+ /* main h2 {
+   font-size:60px; }
+
+
+
+   .weather-summary {
+
+     border: solid;
+     margin: 0px 120px 20px 120px;
+
+   }
+
+
+
+  .current {
+
+    width: 40%;
+
+  }
+
+  .current img {
+    width: 60%;
+    margin: -183px 250px -23px -85px;
     }
+
+.conditions {
+    width: 100%;
+    font-size: 1rem;
+    margin: -10px 0px 30px 100px;
 }
-/*
 
-.weather-summary{
-    margin: 10px 0px -10px 210px;
+main article img {
+
+width:40%;
+margin: 32px 60px 19px 30px;
+float: right;
 }
 
-.weather-summary h3 {
-    margin:0px 0px 20px 110px ;
-}
-.current h3 {
-    font-size:50px;
+main article {
+  margin: 50px 100px 0px 100px;
 }
 
-    .current {
-        width: 100%;
-        padding: 0px 0px 0px 0px;
-
-    }
-    .current img {
-        margin: -208px 451px 0px 0px;
-        width: 35%;
-        height: auto;
-        top: 0px;
-    }
-
-
-    .highlow {
-        width: 60%;
-        font-size: 1rem;
-        margin-left:35%;
-
-    }
-
-    .conditions {
-        width: 60%;
-        font-size: 1rem;
-        margin:30px;
-
-
-    }
-
-    .forecast h3 {
-        border: solid;
-        margin: 0px auto;
-        max-width: 793px;
-        height: 41px;
-        border-bottom-width: 0;
-    }
-
-    table {
-    display: initial;
-    border-collapse:collapse;
-    }
-
-    table td{
-        border:solid;
-        padding: 10px 0px 5px 0px;
-    }
-    table th{
-        border:solid;
-        width: 10%;
-        padding: 15px 18px 5px 10px;
-    }
-
-
-    .news-story img {
-        float: right;
-        width: 50%;
-    }
-
-    .town-article {
-        width: 96%;
-        margin: 1em auto;
-    }
-
-    .town-article, .contact, .footer-bar {
-         font-size: 1.25rem;
-    } */
+ */
