@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>ElClima.com</title>
+
+  <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+  <link href="styles/main-7.css" rel="stylesheet" type="text/css">
+  <link href="styles/medium-7.css" rel="stylesheet" type="text/css">
+  <link href="styles/large-7.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+  <script type="text/javascript" src="scripts/currentdate.js"></script>
+  <script type="text/javascript" src="scripts/hamburger.js"> </script>
+
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">
+      <img src="images/umbrella.png" alt="logo">
+      <h1>ELCLIMA.com</h1>
+    </div>
+
+  </header>
+
+  <nav class="clearfix">
+    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+
+    <ul class="navigation">
+
+    	<li><a href="#"> Home </a></li>
+    	<li><a href="#"> Franklin </a></li>
+    	<li><a href="#"> Greenville </a></li>
+    	<li><a href="#"> Springfield </a></li>
+    	<li><a href="#"> Storm Center </a></li>
+    	<li><a href="#"> Gallery </a></li>
+
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Franklin</h2>
+    <figure>
+
+<img src="images/franklin-original.200.png" alt="mainimg"
+
+    srcset="images/franklin-original-200.png 200w,
+            images/franklin-original-500.png 500w,
+            images/franklin-original-800.png 800w">
+
+    </figure>
+    <section class="weather-summary">
+      <h3>Weather Summary</h3>
+
+      <div class="highlow">
+
+          <p class="cur-temp">High: <span id="high-temp">90</span>°F</p>
+          <p class="cur-temp">Low: <span id="low-temp">66</span>°F</p>
+
+      </div>
+      <div class="current">
+        <h3>Sunny</h3>
+        <picture>
+            <img src="images/sun.png" alt="sun">
+        </picture>
+        </div>
+
+
+    <div class="conditions-center">
+        <p class="cur-con">Precipitation: 0%</p>
+        <p class="cur-con">Wind Speed: <span id="wind-speed">5</span> mph</p>
+        <p class="cur-con">Wind Chill: <span id="wind-chill"><script src="scripts/windchill.js"></script></span>°F</p>
+    </div>
+
+
+    </section>
+
+    <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </section>
+
+    <article>
+      <h3>Franklin Breaks Record</h3>
+
+      <img src="images/franklin.jpg" alt="town-photo" width="100">
+      <p class="town-article">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere arcu luctus nulla sagittis blandit. Donec auctor finibus interdum. Aliquam ligula nunc, fringilla in metus a, viverra hendrerit velit. Cras nulla lectus, pulvinar ut justo et, pretium porttitor est. Sed enim tellus, laoreet sed finibus in, venenatis sit amet felis. Nulla pretium, nibh sed aliquam sagittis, urna nibh laoreet quam, in posuere ex felis vitae ante. Proin rutrum augue quis eleifend varius. Vestibulum tincidunt tempor est, at maximus ante varius at. Suspendisse cursus euismod nulla at lacinia. Suspendisse felis leo, volutpat sit amet tempus id, egestas a nisl. Maecenas malesuada et velit non commodo. Nulla commodo faucibus velit, at blandit lorem fringilla a. Aenean molestie volutpat sem. Fusce venenatis egestas quam, at congue nibh ultricies quis.
+
+        Suspendisse malesuada ex lobortis lorem vulputate blandit. Nulla auctor mauris vitae erat ultrices porta. In non sapien vel mi ultrices venenatis quis quis turpis. Integer in leo iaculis, ultricies arcu non, tristique lacus. Cras malesuada leo faucibus nisl varius mattis. Nunc euismod eu lacus a bibendum. Nulla laoreet placerat leo, viverra tristique massa molestie in. Donec ac pellentesque ipsum. In eleifend diam vitae ornare pharetra. Nullam suscipit sollicitudin velit, id interdum dui. Nullam euismod est lacinia augue pretium rutrum. Donec faucibus id orci rutrum auctor. Quisque ultrices eros et posuere pellentesque. Integer lobortis metus odio, vel interdum metus tincidunt ac. Praesent pulvinar pretium aliquam.
+      </p>
+    </article>
+
+  </main>
+
+  <footer>
+    <section class="contact">
+      ElClima info. <br>
+      999.999.9999 <br>
+      123 Main St. Anytown, US 99999<br>
+      Google Map
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | ElCLIMA.com | <span id="currentdate"><script src="scripts/currentdate.js"></script></span>
+    </section>
+  </footer>
+</body>
+</html>

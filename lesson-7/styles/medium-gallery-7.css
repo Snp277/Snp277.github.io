@@ -1,0 +1,131 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+
+    section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
+
+    header img {
+        position: absolute;
+        width: 300px;
+        margin: -110px 0px 0px -264px;
+    }
+
+h1, h2, h3, h4 {
+
+  font-family: saira;
+}
+header {
+
+    position: relative;
+    height: 250px;
+    top: 61px;
+    right: auto;
+}
+    header h1 {
+    font-size: 50px;
+    padding:0px;
+    width: 75%;
+    margin: 0px 190px;
+    }
+
+
+
+    nav {
+    }
+
+    nav ul {
+        display: block;
+        margin-top: -47px;
+    }
+
+    nav ul li {
+        float: left;
+        width: 16%;
+        font-size: 1rem;
+        border-radius: 14px;
+    }
+
+    .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+/*
+.weather-summary{
+    margin: 10px 0px -10px 210px;
+}
+
+.weather-summary h3 {
+    margin:0px 0px 20px 110px ;
+}
+.current h3 {
+    font-size:50px;
+}
+
+    .current {
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+
+    }
+    .current img {
+        margin: -208px 451px 0px 0px;
+        width: 35%;
+        height: auto;
+        top: 0px;
+    }
+
+
+    .highlow {
+        width: 60%;
+        font-size: 1rem;
+        margin-left:35%;
+
+    }
+
+    .conditions {
+        width: 60%;
+        font-size: 1rem;
+        margin:30px;
+
+
+    }
+
+    .forecast h3 {
+        border: solid;
+        margin: 0px auto;
+        max-width: 793px;
+        height: 41px;
+        border-bottom-width: 0;
+    }
+
+    table {
+    display: initial;
+    border-collapse:collapse;
+    }
+
+    table td{
+        border:solid;
+        padding: 10px 0px 5px 0px;
+    }
+    table th{
+        border:solid;
+        width: 10%;
+        padding: 15px 18px 5px 10px;
+    }
+
+
+    .news-story img {
+        float: right;
+        width: 50%;
+    }
+
+    .town-article {
+        width: 96%;
+        margin: 1em auto;
+    }
+
+    .town-article, .contact, .footer-bar {
+         font-size: 1.25rem;
+    } */
