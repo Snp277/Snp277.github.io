@@ -1,53 +1,32 @@
-* { margin: 1em; box-sizing: border-box; }
+
+
+* {margin: 100px auto;box-sizing: border-box;}
 
 body {
-    line-height: 32px;
+    position: relative;
+    margin:0 auto;
+    line-height: 28px;
     font-family: helvetica, sans-serif;
-    color: slategrey;
+    color: black;
+    ma;
 }
-
-h1 {
-    font-size: 2.2em;
-    font-family: didot, serif;
-    color: darkslategrey;
-}
-
-h2 {
-    text-align: center;
-    border-bottom: solid slategrey;
-}
-
-header, main, footer, body, nav {
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 90%;
-    background-color: #fff;
-}
-
-header, footer, footer a {
-    text-align: center;
-    background-color: skyblue;
-    color: slategrey;
-}
-
 
 
 table {
   font-family: Ubuntu, sans-serif;
-  border: .05em solid #bbb;
-  box-shadow: 3px 3px 3px #bbb;
-  letter-spacing: .5px;
+  box-shadow: 8px 8px 38px darkslategrey;
+  letter-spacing: 1.5px;
+  border-spacing: 0px;
 }
 
 tr th {
   background-color: #628ca6;
   color: #fff;
-  text-align: center;
+
 }
 
 td, th {
-  border: .o5em solid #bbb;
-  padding: 10px;
+  border: 1px solid #bbb;
   text-align: center;
 }
 
@@ -57,7 +36,7 @@ td, th {
 
 tr:nth-child(odd) td {
   background-color: #e7f0ed;
-  padding: 2px;
+  padding: 2.5px;
 }
 
 tr:nth-last-child(even) td {
@@ -77,5 +56,9 @@ tfoot th {
   background-color: #7fb9c2;
   text-align: center;
   color: black;
-  font-size: .05em;
+  font-size: 8px;
+}
+
+caption {
+  padding: 10px;
 }
