@@ -1,0 +1,81 @@
+* { margin: 1em; box-sizing: border-box; }
+
+body {
+    line-height: 32px;
+    font-family: helvetica, sans-serif;
+    color: slategrey;
+}
+
+h1 {
+    font-size: 2.2em;
+    font-family: didot, serif;
+    color: darkslategrey;
+}
+
+h2 {
+    text-align: center;
+    border-bottom: solid slategrey;
+}
+
+header, main, footer, body, nav {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 90%;
+    background-color: #fff;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: skyblue;
+    color: slategrey;
+}
+
+
+
+table {
+  font-family: Ubuntu, sans-serif;
+  border: .05em solid #bbb;
+  box-shadow: 3px 3px 3px #bbb;
+  letter-spacing: .5px;
+}
+
+tr th {
+  background-color: #628ca6;
+  color: #fff;
+  text-align: center;
+}
+
+td, th {
+  border: .o5em solid #bbb;
+  padding: 10px;
+  text-align: center;
+}
+
+.other {
+  color: #fff;
+}
+
+tr:nth-child(odd) td {
+  background-color: #e7f0ed;
+  padding: 2px;
+}
+
+tr:nth-last-child(even) td {
+  background-color: #e7ffed;
+  padding: 2px;
+}
+
+thead th  {
+  background-color: #7fb9c2;
+  text-align: center;
+  color: black;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+tfoot th {
+  background-color: #7fb9c2;
+  text-align: center;
+  color: black;
+  font-size: .05em;
+}
