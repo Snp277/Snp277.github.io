@@ -47,6 +47,12 @@ header {
         border-radius: 14px;
     }
 
+    .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+/*
 .weather-summary{
     margin: 10px 0px -10px 210px;
 }
@@ -122,4 +128,4 @@ header {
 
     .town-article, .contact, .footer-bar {
          font-size: 1.25rem;
-    }
+    } */

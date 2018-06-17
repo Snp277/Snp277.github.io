@@ -13,8 +13,7 @@ h1, h2, h3, h4 {
 
 header, nav, main, footer {
     max-width: 1213px;
-    margin: -9px auto;
-    padding: 28px;
+    margin: 10px auto;
 }
 
 header {
@@ -48,7 +47,6 @@ nav button {
     border: none;
     font-size: 1.6rem;
     color: #2f4154;
-    z-index: 1;
 }
 
 
@@ -91,11 +89,13 @@ nav button {
 
     nav ul {
 
-margin: -80px 0px 0px 144px;
-
-padding: 0;
-
-text-align: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      list-style-type: none;
+      margin: 0;
 }
     nav ul li {
     background-color: lightgray;
@@ -116,7 +116,45 @@ text-align: center;
   }
 
 
-    main {
+  main {
+    position: relative;
+    background-color: #ff766c;
+
+  }
+
+  main .photoG img {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.75rem;
+    width: 500px;
+    margin: 0.75rem auto;
+  }
+
+  .photoG {
+    border: 2px solid cadetblue;
+    border-radius: 5%;
+    text-align: center;
+}
+
+
+.photoG {
+    border: 2px solid  #E6E6E6;
+    border-radius: 5%;
+    text-align: center;
+}
+.photoG:hover {
+    box-shadow: 4px 4px 10px ;
+}
+.photoG > img {
+    padding: 10px;
+    max-width: 100%;
+}
+.photoG > p {
+    padding: 5px;
+}
+
+    /* main {
     position: relative;
     clear: both;
     background-color:rgba(255, 209, 87, 0.5);;
@@ -184,12 +222,16 @@ main article img{
     margin: 2em auto 40px;
     padding-bottom: 27px;
     }
+
+    } */
+
+
     footer .contact {
     background-color: lightgray;
-    margin: -59px -29px 0px -27px;
+    margin: 10px 0px 0px 0px;
     padding: 30px 0px 30px 0px;
-    text-align: center;
-}
+    text-align: center;}
+
 
 .footer-bar {
     background-color: darkgray;

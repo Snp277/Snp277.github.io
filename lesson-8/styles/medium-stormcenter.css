@@ -7,29 +7,17 @@
     section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
 
     header img {
-        position: absolute;
-        width: 300px;
-        margin: -110px 0px 0px -264px;
-    }
+
+width: 100%;
+
+z-index: -1;
+
+}
 
 h1, h2, h3, h4 {
 
   font-family: saira;
 }
-header {
-
-    position: relative;
-    height: 250px;
-    top: 61px;
-    right: auto;
-}
-    header h1 {
-    font-size: 50px;
-    padding:0px;
-    width: 75%;
-    margin: 0px 190px;
-    }
-
 
 
     nav {

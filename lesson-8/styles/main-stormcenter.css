@@ -12,31 +12,29 @@ h1, h2, h3, h4 {
 }
 
 header, nav, main, footer {
-    max-width: 1213px;
-    margin: -9px auto;
-    padding: 28px;
+
+    width: 100%;
 }
 
-header {
 
-position: relative;
-
-height: 250px;
-
-top: 114px;
-
-right: auto;
+.logo{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:  space-around;
+	height:  auto;
+	width: 100%;
 }
+
 header h1 {
     font-family: saira;
-    width: 114px;
-    padding: 0px 30px;
-    margin: -20px auto;
+    height:  auto;
 }
 header img {
-    position: absolute;
-    width: 300px;
-    margin: -128px 0px 0px -264px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin:  0;
 }
 
 nav button {
@@ -52,7 +50,7 @@ nav button {
 }
 
 
-.hamburger { display: block;position: absolute;top: 2.0rem;right: 1.25rem; }
+.hamburger {right: 1.25rem;}
 
 .navigation { list-style: none; padding-left: 0; }
 .navigation li { display: none; }
@@ -68,17 +66,15 @@ nav button {
 
 .hamburger {
     content: "";
-    position: absolute;
-    right: 1.5rem; top: 1.8rem;
     display: block;
-    width: 1.25rem; height: 0;
+    height: 0;
     -webkit-box-shadow: 1px 10px 1px 1px #eee,1px 16px 1px 1px #eee,1px 22px 1px 1px #eee;
-    box-shadow: 0 10px 0 1px #eee,0 16px 0 1px #eee,0 22px 0 1px #eee;
+
 }
 
 
 @media only screen and (min-width: 37.5em) {
-	header,	nav {margin: 0 auto;max-width: 868px;}
+	header,	nav {margin: 0 auto;max-width: 868px;height: auto;}
 	h1 { text-align: center; }
 	.hamburger { display: none;	}
 	.navigation {	background-color: white;	overflow: hidden;	text-align: center;	}
@@ -107,23 +103,39 @@ text-align: center;
     text-decoration: none;
     color: #000;
 }
-    nav ul li.active a {
+
+nav ul li.active a {
 
     }
 
-    nav ul li a:hover {
+nav ul li a:hover {
     color: #FFFFFF;
   }
 
 
-    main {
+main {
     position: relative;
     clear: both;
-    background-color:rgba(255, 209, 87, 0.5);;
-
-    padding: 0px;
-
+    background-color:rgba(68, 182, 193, 0.5);
+    padding: 50px;
 }
+
+
+
+form fieldset {
+    border: 4px solid;
+    background-color: #44b6c1;
+    box-shadow: 7px 7px 10px;
+    max-width:  840px;
+    margin: 30px auto;
+}
+
+
+
+
+
+
+
 
 main figure img {
 
@@ -133,7 +145,7 @@ main figure img {
 
 
 
-    main h2 {
+main h2 {
     text-align: center;
     color: #000;
     font-size: 2em;
@@ -184,11 +196,10 @@ main article img{
     margin: 2em auto 40px;
     padding-bottom: 27px;
     }
-    footer .contact {
+
+
+footer .contact {
     background-color: lightgray;
-    margin: -59px -29px 0px -27px;
-    padding: 30px 0px 30px 0px;
-    text-align: center;
 }
 
 .footer-bar {
@@ -206,3 +217,18 @@ main article img{
     display: table;
     clear: both;
 }
+
+legend {
+	font-size: 30px;
+	border:4px solid;
+    background-color: #44b6c1;
+}
+
+form input {
+    border: 2px solid #000;
+    background: #1e5269;
+    padding: 10px 0px;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    }
