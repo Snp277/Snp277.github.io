@@ -12,31 +12,28 @@ h1, h2, h3, h4 {
 }
 
 header, nav, main, footer {
-    max-width: 1213px;
-    margin: -9px auto;
-    padding: 28px;
+width: 100%;
 }
 
-header {
 
-position: relative;
-
-height: 250px;
-
-top: 114px;
-
-right: auto;
+.logo{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:  space-around;
+	height:  auto;
+	width: 100%;
 }
+
 header h1 {
     font-family: saira;
-    width: 114px;
-    padding: 0px 30px;
-    margin: -20px auto;
+    height:  auto;
 }
 header img {
-    position: absolute;
-    width: 300px;
-    margin: -128px 0px 0px -264px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin:  0;
 }
 
 nav button {
@@ -121,7 +118,7 @@ text-align: center;
     clear: both;
     background-color:rgba(255, 209, 87, 0.5);;
 
-    padding: 0px;
+    padding: 50px;
 
 }
 
