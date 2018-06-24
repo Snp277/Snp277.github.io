@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>ElClima.com</title>
+
+  <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+  <link href="styles/main-stormcenter.css" rel="stylesheet" type="text/css">
+  <link href="styles/medium-stormcenter.css" rel="stylesheet" type="text/css">
+  <link href="styles/large-stormcenter.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+  <script type="text/javascript" src="scripts/currentdate.js"></script>
+  <script type="text/javascript" src="scripts/hamburger.js"> </script>
+  <script type="text/javascript" src="scripts/ratingvalue.js"> </script>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">
+      <img src="images/umbrella.png" alt="logo">
+
+    </div>
+
+  </header>
+
+  <nav class="clearfix">
+    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+
+    <ul class="navigation">
+
+    	<li><a href="#"> Home </a></li>
+    	<li><a href="https://snp277.github.io/lesson-8/franklin-8.html"> Franklin </a></li>
+    	<li><a href="#"> Greenville </a></li>
+    	<li><a href="#"> Springfield </a></li>
+    	<li><a href="https://snp277.github.io/lesson-8/stormcenter.html"> Storm Center </a></li>
+    	<li><a href="https://snp277.github.io/lesson-8/gallery-8.html"> Gallery </a></li>
+
+    </ul>
+  </nav>
+
+  <main>
+
+    <form class="form" method="get" action="thanks.html" >
+
+       <fieldset>
+         <legend>Personal Information</legend>
+           <label for="name">Full Name:
+             <br>
+           <input type="text" name="name" placeholder="Ex. Juan J. Rodriguez"  pattern="[a-zA-Z -._]{5,}" >
+           </label>
+           <br>
+           <label for="email">E-mail:
+             <br>
+           <input type="email" name="email" placeholder="Ex. user123@elclima.com">
+           </label>
+           <br>
+           <label for="phone">Phone Number
+             <br>
+           <input type="tel" name="phone" placeholder="Ex. +57 999 999 999">
+           </label>
+           <br>
+           <label for="zipcode">Zip Code:
+             <br>
+           <input type="number" name="zipcode" value="">
+           </label>
+           <br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Storm Information</legend>
+           <label for="stormdate">Storm Date:
+             <br>
+           <input type="date" name="stormdate" placeholder="DD/MM/YY">
+           <br>
+                </label>
+           <label for="stormtype">Storm Type:
+             <br>
+           <input list="storm" name="storm">
+                 <datalist id="storm">
+                     <option value="Flash Flood">
+                     <option value="Hail">
+                     <option value="Hurricane">
+                     <option value="Thunderstorm">
+                     <option value="Tornado"
+                 </datalist>
+           </label>
+           <br>
+           <label class="top">Storm Severity (Rating 1-10):
+             <br>
+           <input type="range" id="rating" name="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+           <span id="ratingvalue">5</span></label>
+           <label class="top"></label>
+           <br>
+           <label class="top" id="region">Storm Region:
+          <br>
+           <select name="region">
+               <option value="">Select Region &#9662;</option>
+               <option value="franklin">Franklin</option>
+               <option value="greenville">Greenville</option>
+               <option value="springfield">Springfield</option>
+             </select>
+           </label>
+           <br>
+           <div>User In-Danger Level:</div>
+           <label class="dangerLevel">
+           <input type="radio" name="dangerLevel" value="yes">Yes</label>
+           <label class="dangerLevel">
+           <input type="radio" name="dangerLevel" value="maybe">Maybe</label>
+           <label class="dangerLevel">
+           <input type="radio" name="dangerLevel" value="no">No</label>
+           <br>
+
+           <label class="top" id="comments">Additional Information or Comments:
+             <br>
+           <textarea rows="5" cols="40" name="comments"></textarea>
+           </label>
+           </fieldset>
+
+
+           <div class="call">
+                   <input type="submit" value="Report Storm" name="report" class="submitboton">
+
+                   <input type="hidden" name="redirect" value="lesson-8/thanks.html">
+            </div>
+
+
+    </form>
+
+  </main>
+
+  <footer>
+    <section class="contact">
+      ElClima info. <br>
+      999.999.9999 <br>
+      123 Main St. Anytown, US 99999<br>
+      Google Map
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | ElCLIMA.com | <span id="currentdate"><script src="scripts/currentdate.js"></script></span>
+    </section>
+  </footer>
+</body>
+</html>
