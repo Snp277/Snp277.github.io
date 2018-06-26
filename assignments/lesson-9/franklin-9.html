@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
   <script type="text/javascript" src="scripts/currentdate.js"></script>
   <script type="text/javascript" src="scripts/hamburger.js"> </script>
-  <script type="text/javascript" src="script/weather.js"></script>
+  <script type="text/javascript" src="scripts/weather.js"></script>
 
 
 </head>
@@ -41,7 +41,7 @@
     </ul9
   </nav>
 
-  <main>
+  <main style="background-color: rgba(255, 209, 87, 0.5)">
     <h2>Franklin</h2>
     <figure>
 
@@ -57,22 +57,20 @@
 
       <div class="highlow">
 
-          <p class="cur-temp">High: <span id="high-temp">90</span>°F</p>
-          <p class="cur-temp">Low: <span id="low-temp">66</span>°F</p>
+        <p>Current temperature: <span id="hightemp"></span> &deg;F </p>
+         <p>Humidity: <span id="humidity"></span>&percnt;</p>
+        <p> Clouds: <span id="clouds"></span>&percnt;</p>
 
       </div>
       <div class="current">
-        <h3>Sunny</h3>
-        <picture>
-            <img src="images/sun.png" alt="sun">
-        </picture>
+
         </div>
 
+<img src="https://openweathermap.org/img/w/01n.png" id="weatherimage" alt="Weather icon">
 
     <div class="conditions-center">
-        <p class="cur-con">Precipitation: 0%</p>
-        <p class="cur-con">Wind Speed: <span id="wind-speed">5</span> mph</p>
-        <p class="cur-con">Wind Chill: <span id="wind-chill"><script src="scripts/windchill.js"></script></span>°F</p>
+      <p>Current conditions: <span id="currentCond"></span></p>
+      <p>Wind speed: <span id="windspeed"></span> mph</p>
     </div>
 
 

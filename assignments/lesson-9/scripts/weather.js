@@ -1,3 +1,5 @@
+//Home//
+
 let towninfoRequest = new XMLHttpRequest();
 let towninfoURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
@@ -9,27 +11,54 @@ towninfoRequest.onload = function() {
 
   console.log(townData);
 
-  document.getElementById('Ftown-motto').innerHTML =  townData.towns[0].motto;
+  document.getElementById('frFundation').innerHTML =  townData.towns[0].motto;
 
-  document.getElementById('Ftown-founded').innerHTML =  townData.towns[0].yearFounded;
+  document.getElementById('frFounded').innerHTML =  townData.towns[0].yearFounded;
 
-  document.getElementById('Ftown-population').innerHTML =  townData.towns[0].currentPopulation;
+  document.getElementById('frPoblacion').innerHTML =  townData.towns[0].currentPopulation;
 
-  document.getElementById('Ftown-rainfall').innerHTML =  townData.towns[0].averageRainfall;
-  
-  document.getElementById('Gtown-motto').innerHTML =  townData.towns[1].motto;
+  document.getElementById('frRainfall').innerHTML =  townData.towns[0].averageRainfall;
 
-  document.getElementById('Gtown-founded').innerHTML =  townData.towns[1].yearFounded;
+  document.getElementById('gvFundation').innerHTML =  townData.towns[1].motto;
 
-  document.getElementById('Gtown-population').innerHTML =  townData.towns[1].currentPopulation;
+  document.getElementById('gvFounded').innerHTML =  townData.towns[1].yearFounded;
 
-  document.getElementById('Gtown-rainfall').innerHTML =  townData.towns[1].averageRainfall;
+  document.getElementById('gvpoblacion').innerHTML =  townData.towns[1].currentPopulation;
 
-  document.getElementById('Stown-motto').innerHTML =  townData.towns[3].motto;
+  document.getElementById('gvRainfall').innerHTML =  townData.towns[1].averageRainfall;
 
-  document.getElementById('Stown-founded').innerHTML =  townData.towns[3].yearFounded;
+  document.getElementById('spFundation').innerHTML =  townData.towns[3].motto;
 
-  document.getElementById('Stown-population').innerHTML =  townData.towns[3].currentPopulation;
+  document.getElementById('spFounded').innerHTML =  townData.towns[3].yearFounded;
 
-  document.getElementById('Stown-rainfall').innerHTML =  townData.towns[3].averageRainfall;
+  document.getElementById('spPoblacion').innerHTML =  townData.towns[3].currentPopulation;
+
+  document.getElementById('spRainfall').innerHTML =  townData.towns[3].averageRainfall;
+}
+
+//FRANKLIN//
+
+
+let weatherRequest = new XMLHttpRequest();
+let apiURL = 'https://api.openweathermap.org/data/2.5/weather?&id=4156210&units=imperial&APPID=7ae51efa9b789abd3dfb69401f1cce74';
+weatherRequest.open('GET', apiURL, true);
+weatherRequest.send();
+
+weatherRequest.onload = function() {
+  let weatherData = JSON.parse(weatherRequest.responseText);
+
+  console.log(weatherData);
+
+  document.getElementById('hightemp').innerHTML =  weatherData.main.temp_max;
+
+  document.getElementById('humidity').innerHTML =  weatherData.main.humidity;
+
+  document.getElementById('windspeed').innerHTML =  weatherData.wind.speed;
+
+  document.getElementById('clouds').innerHTML =  weatherData.clouds.all;
+
+  document.getElementById('currentCond').innerHTML =  weatherData.weather[0].description;
+
+  let imagesrc = 'https://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png';
+  document.getElementById('weatherimage').src = imagesrc;
 }
