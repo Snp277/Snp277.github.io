@@ -131,7 +131,7 @@ main div p {
 .ws {
 	background-color:rgba(68, 182, 193, 0.5);
 	overflow:hidden;
-	height: 250px;
+	height: 280px;
 }
 
 .ws img {
@@ -143,7 +143,7 @@ main div p {
 	width: 33%;
 	float: left;
 	overflow:hidden;
-	height: 250px;
+	height: 280px;
 }
 .fr img{
   display: none;
@@ -153,7 +153,7 @@ main div p {
 	width: 33%;
 	float: left;
 	overflow:hidden;
-	height: 250px;
+	height: 280px;
 }
 .gr img {
   display: none;
@@ -164,7 +164,7 @@ main div p {
 	width: 33%;
 	float: left;
 	overflow:hidden;
-	height: 250px;
+	height: 280px;
 }
 .sp img{
   display: none;
@@ -172,9 +172,9 @@ main div p {
 
 
 main div .mainbox{
-	display:flex;
-	justify-content: center;
+
 	align-items: center;
+  font-size: 13px;
 
 
 }
