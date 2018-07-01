@@ -1,0 +1,339 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+
+    section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
+
+    header img {
+
+width: 100%;
+
+z-index: -1;
+
+}
+
+h1, h2, h3, h4 {
+
+  font-family: saira;
+}
+
+
+    nav {
+    }
+
+    nav ul {
+        display: block;
+        margin-top: -47px;
+    }
+
+    nav ul li {
+        float: left;
+        width: 16%;
+        font-size: 1rem;
+        border-radius: 14px;
+    }
+
+    @media only screen and (min-width: 37.5em) {
+
+        /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+
+        nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+
+        section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
+
+        header img {
+
+    width: 100%;
+
+    z-index: -1;
+
+    }
+
+    h1, h2, h3, h4 {
+
+      font-family: saira;
+    }
+
+
+        nav {
+        }
+
+        nav ul {
+            display: block;
+            margin-top: -47px;
+        }
+
+        nav ul li {
+            float: left;
+            width: 16%;
+            font-size: 1rem;
+            border-radius: 14px;
+        }
+
+
+        /* HOME */
+        main div{
+        	border: 1px solid black;
+        }
+
+        main div img {
+          width: 40%;
+        }
+
+        main div p {
+        	width: 100%;
+        	/* padding: 1px 0px 0px 10px; */
+        }
+
+        .ws {
+        	background-color:rgba(68, 182, 193, 0.5);
+        	overflow: visible;
+        	height: auto;
+        }
+
+        .ws img {
+          display: inherit;
+        }
+
+        .fr {
+        	background-color:rgba(255, 118, 108, 0.5);
+        	width: 90%;
+        	border: none;
+            overflow: visible;
+            height: auto;
+        }
+        .fr img{
+          display: inherit;
+        }
+        .gr {
+        	background-color:rgba(75, 195, 99, 0.5);
+           	width: 90%;
+        	border: none;
+            overflow: visible;
+            height: auto;
+        }
+        .gr img {
+          display: inherit;
+        }
+
+        .sp {
+        	background-color:rgba(255, 209, 87, 0.5);
+           	width: 90%;
+        	border: none;
+            overflow: visible;
+            height: auto;
+        }
+        .sp img{
+          display: inherit;
+        }
+
+
+        main div .mainbox{
+        	display:flex;
+        	justify-content: center;
+        	align-items: center;
+          font-size: 15px;
+        }
+
+    .cities {
+        display:flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+        /* /HOME */
+
+
+            main {
+            position: relative;
+            display: flex;
+            flex-direction:column;
+            background-color: white;
+            padding: 20PX 0PX 15PX 0PX;
+
+        }
+
+
+
+
+
+        .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        border: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .weather-summary{
+        margin: 10px 0px -10px 210px;
+    }
+
+    .weather-summary h3 {
+        margin:0px 0px 20px 110px ;
+    }
+    .current h3 {
+        font-size:50px;
+    }
+
+        .current {
+            width: 100%;
+            padding: 0px 0px 0px 0px;
+
+        }
+        .current img {
+            margin: -208px 451px 0px 0px;
+            width: 35%;
+            height: auto;
+            top: 0px;
+        }
+
+
+        .highlow {
+
+            border: none;
+
+        }
+
+        .conditions {
+            width: 60%;
+            font-size: 1rem;
+              }
+
+        .forecast h3 {
+
+            margin: 0px auto;
+            max-width: 793px;
+            height: 41px;
+            border-bottom-width: 0;
+        }
+
+        table {
+        display: initial;
+        border-collapse:collapse;
+        }
+
+        table td{
+            border:solid;
+            padding: 10px 0px 5px 0px;
+        }
+        table th{
+            border:solid;
+            width: 10%;
+            padding: 15px 18px 5px 10px;
+        }
+
+
+        .news-story img {
+            float: right;
+            width: 50%;
+        }
+
+        .town-article {
+            width: 96%;
+            margin: 1em auto;
+        }
+
+        .town-article, .contact, .footer-bar {
+             font-size: 1.25rem;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.weather-summary{
+    margin: 0 auto;
+}
+
+.weather-summary h3 {
+    margin: 0 auto;
+}
+.current h3 {
+    font-size:50px;
+}
+
+    .current {
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+
+    }
+#weatherimage {
+    width:100px
+}
+
+
+    .highlow {
+        width: 60%;
+        font-size: 1rem;
+    }
+
+    .conditions {
+        width: 60%;
+        font-size: 1rem;
+        margin:30px;
+
+
+    }
+
+    .forecast h3 {
+        border: solid;
+        margin: 0px auto;
+        max-width: 793px;
+        height: 41px;
+        border-bottom-width: 0;
+    }
+
+    table {
+    display: initial;
+    border-collapse:collapse;
+    }
+
+    table td{
+        border:solid;
+        padding: 10px 0px 5px 0px;
+    }
+    table th{
+        border:solid;
+        width: 10%;
+        padding: 15px 18px 5px 10px;
+    }
+
+
+    .news-story img {
+        float: right;
+        width: 50%;
+    }
+
+    .town-article {
+        width: 96%;
+        margin: 1em auto;
+    }
+
+    .town-article, .contact, .footer-bar {
+         font-size: 1.25rem;
+    }
