@@ -23,14 +23,21 @@ nav ul {
            }
 
 
+
 nav ul li {
-        float: left;
-        width: 15%;
-        font-size: 1rem;
-        padding: 20px 20px 20px 20px;
-        border-radius: 1px;
+        width: 16%;
+        font-size: 1.2rem;
+        border-radius: 0px;
     }
 
+
+.navigation {
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+    justify-content: space-between;
+    width: 90%;
+    }
 
 
         /* HOME */
@@ -165,4 +172,17 @@ float: right;
 
 main article {
   margin: 50px 100px 0px 100px;
+}
+
+
+    footer .contact {
+    background-color: lightgray;
+    max-width: 1050px;
+
+}
+
+.footer-bar {
+
+    max-width: 1050px;
+
 }

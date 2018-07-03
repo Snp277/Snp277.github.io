@@ -78,9 +78,9 @@ nav button {
 	header,	nav {margin: 0 auto;max-width: 868px;}
 	h1 { text-align: center; }
 	.hamburger { display: none;	}
-	.navigation {	background-color: white;	overflow: hidden;	text-align: center;	}
-	.navigation li {display: inline-block;padding: 11px 79px 16px 0px; }
-	.navigation a {	display: block;	color: #eee;	padding: 10px 10px 10px 10px;	text-align: center;	text-decoration: none;}
+	.navigation {background-color: white;overflow: hidden;text-align: center;justify-content: space-between;}
+	.navigation li {display: inline-block;/* padding: 11px 79px 16px 0px; */}
+	.navigation a {display: block;/* color: #eee; */padding: 10px 10px 10px 10px;text-align: center;text-decoration: none;}
 	.navigation a:hover {	color: #000; background-color: #777;	}
 }
 
@@ -89,9 +89,7 @@ nav button {
     nav ul {
 
 margin: 0px 0px 0px 0px;
-
 padding: 0;
-
 text-align: center;
 }
     nav ul li {
@@ -99,6 +97,8 @@ text-align: center;
     padding: 7px 0px 7px 0px;
     border: 0.5px solid;
     list-style-type: none;
+    text-align: center
+
     }
 
     nav ul li a {
@@ -106,11 +106,13 @@ text-align: center;
     color: #000;
 }
     nav ul li.active a {
+    	color: #fff;
+    	text-align: center;
 
     }
 
     nav ul li a:hover {
-    color: #FFFFFF;
+    color: #fff;
   }
 
 
@@ -211,10 +213,10 @@ main .photoG img {
 
 
 .photoG {
-  border: 2px solid  #E6E6E6;
+  border: 2px solid  #000;
   border-radius: 5%;
   text-align: center;
-  background-color: rgba(255,118,108, 0);
+  background-color: rgba(255,118,108, 0.5);
 }
 .photoG:hover {
   box-shadow: 4px 4px 10px ;
@@ -291,6 +293,7 @@ main article img{
 
     footer .contact {
     background-color: lightgray;
+    max-width: 1050px;
 
 }
 
@@ -300,7 +303,8 @@ main article img{
     font-size: 0.75em;
     text-align: center;
     padding: 0;
-    margin: -1px;
+    margin: 0 auto;
+    max-width: 1050px;
     border: 1px solid black;
 }
 

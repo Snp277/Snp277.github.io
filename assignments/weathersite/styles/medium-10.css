@@ -20,20 +20,8 @@ h1, h2, h3, h4 {
 }
 
 
-    nav {
-    }
 
-    nav ul {
-        display: block;
-        margin-top: -47px;
-    }
 
-    nav ul li {
-        float: left;
-        width: 16%;
-        font-size: 1rem;
-        border-radius: 14px;
-    }
 
     @media only screen and (min-width: 37.5em) {
 
@@ -57,21 +45,34 @@ h1, h2, h3, h4 {
     }
 
 
-        nav {
-        }
 
-        nav ul {
-            display: block;
-            margin-top: -47px;
-        }
+ nav ul {
 
-        nav ul li {
-            float: left;
-            width: 16%;
-            font-size: 1rem;
-            border-radius: 14px;
-        }
+display:flex;
 
+width: 611px;
+
+margin: 0 auto;
+}
+    nav ul li {
+    border: 2px solid;
+    border-radius: 20px
+
+    }
+
+    nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+    nav ul li.active a {
+    	color: #fff;
+    	text-align: center;
+
+    }
+
+    nav ul li a:hover {
+    color: #fff;
+  }
 
         /* HOME */
         main div{
@@ -336,4 +337,22 @@ h1, h2, h3, h4 {
 
     .town-article, .contact, .footer-bar {
          font-size: 1.25rem;
+    }
+
+
+        footer .contact {
+        background-color: lightgray;
+        max-width: 1050px;
+
+    }
+
+    .footer-bar {
+        background-color: darkgray;
+        color: #E6E6E6;
+        font-size: 0.75em;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 1050px;
+        border: 1px solid black;
     }
