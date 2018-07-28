@@ -10,22 +10,25 @@
 
     <script type="text/javascript" src="scripts/currentdate.js"></script>
     <script type="text/javascript" src="scripts/hamburger.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-        $(function() {
-            $('figure').on('click', function() {
-                $('div').addClass("hidden");
-                var classVar = this.className;
-                $('div.' + classVar).removeClass("hidden");
 
-                var target_offset = $('#' + classVar).offset();
-                var target_top = target_offset.top;
 
-                $('html, body').animate({scrollTop:target_top}, 500);
-            });
+    $(function() {
+        $('figure').on('click', function() {
+            $('div').addClass("hidden");
+            var classVar = this.className;
+            $('div.' + classVar).removeClass("hidden");
 
+            var target_offset = $('#' + classVar).offset();
+            var target_top = target_offset.top;
+
+            $('html, body').animate({scrollTop:target_top}, 500);
         });
 
-    </script>
+    });
+
+</script>
 
 </head>
 
@@ -49,96 +52,79 @@
        </nav>
 
    </header>
-<main id="Sales">
+   <main id="sales">
+           <h1>Mountain Bikes for Sale</h1>
+
+           <div id="shop">
+             <figure class="biciuno">
+                     <img src="https://amp.bmc-switzerland.com/pub/media/catalog/product/cache/926507dc7f93631a094422215b778fe0/t/r/trailfox-amp-two.jpg" alt="biciuno">
+                     <figcaption>Trailfox AMP TWO <br><em>click for more info</em>   </figcaption>
+                   </figure>
+                   <figure class="bicidos">
+                     <img src="https://www.jensonusa.com/globalassets/product-images---all-assets/yeti-cycles/bi177t06-black.jpg" alt="bicidos">
+                     <figcaption>YETI SB100 TURQ X01 RACE BIKE 2018 <br><em>click for more info</em></figcaption>
+                   </figure>
+                   <figure class="bicitres">
+                     <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/1193600_2018_A_1_Slash_98?wid=1360&hei=1020&fmt=pjpeg&qlt=40,1&iccEmbed=0&cache=on,on" alt="bicitres">
+                     <figcaption>Slash 9.8 <br><em>click for more info</em></figcaption>
+                   </figure>
+                  </div>
+
+           </div>
+           <div id="catalogo">
+             <div class="bicidescrip biciuno hidden" id="biciuno">
+<h2>Trailfox AMP TWO"</h2>
+<img src="https://amp.bmc-switzerland.com/pub/media/catalog/product/cache/926507dc7f93631a094422215b778fe0/t/r/trailfox-amp-two.jpg" alt="biciuno">
+<h3>PRICE: $7,499.00</h3>
+<h3>Descrition</h3>
+<ul>
+  <li>650b+ Wheels and Tires: Massive amounts of traction makes the mountain your playground</li>
+  <li>	E-Specific Geo Concept: Geometry specifically designed to provide optimum handling and efficiency for the e-MTB all-mountain rider</li>
+  <li>Twin Hollow-core Tube Design: Hides the battery pack in the downtube while supporting a stiff front triangle</li>
+  <li>Shimano E8000: A powerful drive unit made for the demands of mountain biking</li>
+  <li>E-Specific Advanced Pivot System (APS): An efficient, yet active suspension system with an e-mtb specific tune</li>
+  <li>	E-Specific Suspension Linkage: Strong and oversized for durability and a precise handling</li>
+  <li>	Integrated Speed Sensor: Hidden in the rear chainstay for a clean look and accurate speed measurement</li>
+</ul>
+
+</div>
+
+<div class="bicidescrip bicidos hidden" id="bicidos">
+<h2>YETI SB100 TURQ X01 RACE BIKE 2018</h2>
+<img src="https://www.jensonusa.com/globalassets/product-images---all-assets/yeti-cycles/bi177t06-black.jpg" alt="bicidos">
+<h3>PRICE: $7,999.00 </h3>
+<h3>details</h3>
+<u>
+    <li>FRAME:	Carbon Fiber Main Frame and Swing Arm</li>
+    <li>WEIGHT:	25.80 lbs</li>
+    <li>FORK:	Fox Factory 34 SC, 120mm Travel</li>
+    <li>SHIFTER:	SRAM X01 Eagle</li>
+    <li>STEM LENGTHS	50mm</li>
+    <li>GRIPS:	Ergon GE1</li>
+</ul>
+
+</div>
+
+<div class="bicidescrip bicitres hidden" id="bicitres">
+<h2>Slash 9.8</h2>
+<img src="https://trek.scene7.com/is/image/TrekBicycleProducts/1193600_2018_A_1_Slash_98?wid=1360&hei=1020&fmt=pjpeg&qlt=40,1&iccEmbed=0&cache=on,on" alt="bicitres">
+ <h2>Specifications</h2>
+ <ul>
+
+   <li>FRAME: OCLV Mountain Carbon main frame & seatstay, 1x-specific alloy chainstay, ABP, Boost148, Knock Block, EVO link, E2 tapered head tube, Mino Link, Control Freak internal routing, Carbon Armor, PF92, ISCG 05, G2 Geometry, 150mm travel</li>
+   <li>WHEELS: Bontrager Line Elite 30, Tubeless Ready, 108T Rapid Drive, Boost110 front, Boost148 rear, tubeless strips included, valves sold separately</li>
+   <li>Shifters: SRAM GX Eagle, 12 speed</li>
+   <li>Rear derailleur: SRAM GX Eagle, Roller Bearing Clutch</li>
+
+ </ul>
 
 
-<h2>Bikes For Sale</h2>
-
-    <div class="shop">
-
-      <figure class="biciuno">
-        <img src="https://amp.bmc-switzerland.com/pub/media/catalog/product/cache/926507dc7f93631a094422215b778fe0/t/r/trailfox-amp-two.jpg" alt="biciuno">
-        <figcaption>Trailfox AMP TWO</figcaption>
-      </figure>
-      <figure class="bicidos">
-        <img src="https://www.jensonusa.com/globalassets/product-images---all-assets/yeti-cycles/bi177t06-black.jpg" alt="bicidos">
-        <figcaption>YETI SB100 TURQ X01 RACE BIKE 2018</figcaption>
-      </figure>
-      <figure class="bicitres">
-        <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/1193600_2018_A_1_Slash_98?wid=1360&hei=1020&fmt=pjpeg&qlt=40,1&iccEmbed=0&cache=on,on" alt="bicitres">
-        <figcaption>Slash 9.8</figcaption>
-      </figure>
-     </div>
-
-      <div class="infocatalogo">
-        <div class="bicidescrip biciuno hidden" id="biciuno">
-          <h2>Trailfox AMP TWO"</h2>
-          <img src="https://amp.bmc-switzerland.com/pub/media/catalog/product/cache/926507dc7f93631a094422215b778fe0/t/r/trailfox-amp-two.jpg" alt="biciuno">
-          <h3>PRICE: $7,499.00</h3>
-          <h3>Descrition</h3>
-          <ul>
-            <li>650b+ Wheels and Tires: Massive amounts of traction makes the mountain your playground</li>
-            <li>	E-Specific Geo Concept: Geometry specifically designed to provide optimum handling and efficiency for the e-MTB all-mountain rider</li>
-            <li>Twin Hollow-core Tube Design: Hides the battery pack in the downtube while supporting a stiff front triangle</li>
-            <li>Shimano E8000: A powerful drive unit made for the demands of mountain biking</li>
-            <li>E-Specific Advanced Pivot System (APS): An efficient, yet active suspension system with an e-mtb specific tune</li>
-            <li>	E-Specific Suspension Linkage: Strong and oversized for durability and a precise handling</li>
-            <li>	Integrated Speed Sensor: Hidden in the rear chainstay for a clean look and accurate speed measurement</li>
-          </ul>
-
-        </div>
-
-        <div class="bicidescrip bicidos hidden" id="bicidos">
-          <h2>YETI SB100 TURQ X01 RACE BIKE 2018</h2>
-          <img src="https://www.jensonusa.com/globalassets/product-images---all-assets/yeti-cycles/bi177t06-black.jpg" alt="bicidos">
-          <h3>PRICE: $7,999.00 </h3>
-          <h3>details</h3>
-          <u>
-              <li>FRAME:	Carbon Fiber Main Frame and Swing Arm</li>
-              <li>WEIGHT:	25.80 lbs</li>
-              <li>FORK:	Fox Factory 34 SC, 120mm Travel</li>
-              <li>SHIFTER:	SRAM X01 Eagle</li>
-              <li>STEM LENGTHS	50mm</li>
-              <li>GRIPS:	Ergon GE1</li>
-          </ul>
-
-        </div>
-
-        <div class="bicidescrip bicitres hidden" id="bicitres">
-          <h2>Slash 9.8</h2>
-          <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/1193600_2018_A_1_Slash_98?wid=1360&hei=1020&fmt=pjpeg&qlt=40,1&iccEmbed=0&cache=on,on" alt="bicitres">
-           <h2>Specifications</h2>
-           <ul>
-
-             <li>FRAME: OCLV Mountain Carbon main frame & seatstay, 1x-specific alloy chainstay, ABP, Boost148, Knock Block, EVO link, E2 tapered head tube, Mino Link, Control Freak internal routing, Carbon Armor, PF92, ISCG 05, G2 Geometry, 150mm travel</li>
-             <li>WHEELS: Bontrager Line Elite 30, Tubeless Ready, 108T Rapid Drive, Boost110 front, Boost148 rear, tubeless strips included, valves sold separately</li>
-             <li>Shifters: SRAM GX Eagle, 12 speed</li>
-             <li>Rear derailleur: SRAM GX Eagle, Roller Bearing Clutch</li>
-
-           </ul>
-
-
-        </div>
-
-</body>
-
-
-    </div>
+</div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-</main>
+           </div>
+       </main>
 
 
 
