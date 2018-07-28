@@ -1,0 +1,189 @@
+@media only screen and (min-width: 37.5em) {
+
+    section.forecast { display: inline-block; }
+
+  /*--------------------Nav---------------*/
+    nav {
+      font-family: 'arial', sans-serif;
+      background-color: #c6a553;
+      text-align: center;
+     }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 30px;
+      overflow: hidden;
+     }
+
+    .navigation li {
+      display: inline-flex;
+      border: unset;
+     }
+    .navigation li a {
+      margin:0;
+      border: none;
+      font-weight: bold;
+
+
+    }
+
+    .navigation ul li a {
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      margin: 0 auto;
+
+
+     }
+
+     li.active a {
+
+
+  }
+
+    .navigation ul li a:hover {
+      background-color: ;
+      color: ;
+
+     }
+
+    .responsive {
+      display:inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding-bottom: 30px;
+      padding-top: 30px;
+
+     }
+
+    .hamburger {
+      display: none;
+     }
+
+
+     /* --------------------------------main-------------------------------- */
+
+
+main {
+  padding: 50px;
+}
+
+
+
+     /* ---------------------------mainindex--------------------------------- */
+     main .boxone, .boxdos {
+  border: solid black;
+  margin-top: 20px;
+ display:flex;
+  background-color: #133914;
+  z-index: -1;
+}
+
+main .boxone .imgdos{
+  padding: 10px;
+  display: flex;
+  float:
+}
+
+main .boxone img {
+ /* align-content: flex-start; */
+ width: 90%;
+ position: relative;
+ max-width: 292px;
+ z-index: 2;
+ padding-top: 10px;
+ align-content: space-around;
+}
+
+main .boxone h3 {
+  color: white;
+  font-size: 100px;
+    -webkit-text-fill-color: white;
+-webkit-text-stroke: 3px black;
+
+
+}
+
+
+main .boxdos h3 {
+  color: white;
+  font-size: 80px;
+    -webkit-text-fill-color: white;
+-webkit-text-stroke: 3px black;
+
+}
+
+main .boxone h4 {
+  border: solid #c6a553;
+  background-color: #c6a553;
+/*   border-radius: 50px; */
+  padding: 20px;
+  margin-left: 100px;
+  -webkit-text-fill-color: white;
+-webkit-text-stroke: 1px black;
+}
+
+
+main .boxdos h4 {
+  border: solid #c6a553;
+  background-color: #c6a553;
+  border-radius: 0px;
+  padding: 20px;
+    -webkit-text-fill-color: white;
+-webkit-text-stroke: 1px black;
+  ;
+}
+
+main .boxdos {
+  height: 500px;
+  flex-direction: column;
+   justify-content: center;}
+     /* ----------------------------main tour-------------------------------- */
+
+     .boxtres img {
+        width: 60%;
+        padding: 15px;
+     }
+
+     .boxtres {
+       font-size: medium;
+     }
+     .boxtres h2{
+       font-size: 30px;
+     }
+
+     .boxcuatro h2 {
+       font-size: 30px;
+     }
+
+     ul {
+       list-style-type: none;
+     }
+
+     .boxcuatro img {
+       width: 60%;
+       padding: 15px;
+
+     }
+
+     .boxcuatro {
+       margin-top: 40px;
+       font-size: medium;
+     }
+
+
+
+     /* ---------------------------main events------------------------------- */
+
+/* ------------------------------- registration------------------------------- */
+
+fieldset{
+
+  line-height: 50px;
+}
+
+     /* ---------------------------main sales-------------------------------- */
+     /* ---------------------------main services----------------------------- */
+     /* -----------------------------------footer--------------------------------- */

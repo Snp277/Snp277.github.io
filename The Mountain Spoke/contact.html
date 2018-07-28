@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Mountain Spoke / Contact</title>
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="styles/main-10.css" rel="stylesheet" type="text/css">
+    <link href="styles/medium-10.css" rel="stylesheet" type="text/css">
+    <link href="styles/large-10.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
+    <script type="text/javascript" src="scripts/hamburger.js"> </script>
+
+
+</head>
+
+<body>
+
+   <header>
+
+       <img src="images/logo.png" alt="logo">
+
+       <nav>
+               <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+         <ul class="navigation" id="mainmenu">
+           <li> <a href="index.html">HOME</a></li>
+           <li> <a href="at.html">ADVENTURES TOURS</a></li>
+           <li> <a href="events.html">EVENTS</a> </li>
+           <li> <a href="sales.html">SALES</a> </li>
+           <li> <a href="services.html">SERVICES</a> </li>
+           <li> <a href="contact.html">CONTACT</a></li>
+         </ul>
+
+       </nav>
+
+   </header>
+
+
+
+<main>
+
+
+  <form>
+                  <h2>Drop us a line</h2>
+                  <div class="flexContainer">
+                      <label for="fullname" class="required">Name:</label>
+                      <input name="fullname" type="text" pattern="[a-zA-Z.-_\s]{5,}" required><br />
+                  </div>
+                  <div class="flexContainer">
+                      <label for="email">Email:</label>
+                      <input name="email" type="email" placeholder="name@example.com" required> <br />
+                  </div>
+                  <div class="flexContainer">
+                      <label for="message">Message:</label>
+                      <textarea name="message" rows="10" cols="32" required></textarea>
+                  </div>
+                  <input type="submit" value="Submit" class="submit" name="submit">
+              </form>
+
+
+  <section>
+              <article>
+                  <div class="trail">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9487388391353!2d-111.09298598443564!3d45.671929379103965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345458559cf66a1%3A0x858c0351ba741919!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1513314992190" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+                  <h3>The Mountain Spoke</h3>
+                  <div class="Information">
+                      <p>Address: 3950 Valley Commons Drive<br> Bozeman, MT</p>
+                      <p>Phone Number: (999) 999-9999</p>
+                      <p>Email: contact@theurl.com</p>
+                  </div>
+
+
+              </article>
+          </section>
+</main>
+
+
+
+
+</body>
+
+
+
+
+
+   <footer>
+     <section class="contact">
+       The Mountain Spoke info. <br>
+       999.999.9999 <br>
+       3950 Valley Commons Driveb Bozeman, MT<br>
+       Google Map
+     </section>
+     <section class="footer-bar">&copy;2018 | All Rights Reserved | TheMountainSpoke.com | <span id="currentdate"><script src="scripts/currentdate.js"></script></span>
+     </section>
+   </footer>

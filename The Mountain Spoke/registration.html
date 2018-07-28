@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Mountain Spoke / Events</title>
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="styles/main-10.css" rel="stylesheet" type="text/css">
+    <link href="styles/medium-10.css" rel="stylesheet" type="text/css">
+    <link href="styles/large-10.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
+    <script type="text/javascript" src="scripts/hamburger.js"> </script>
+
+</head>
+
+<body>
+
+   <header>
+
+       <img src="images/logo.png" alt="logo">
+
+       <nav>
+               <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+         <ul class="navigation" id="mainmenu">
+           <li> <a href="index.html">HOME</a></li>
+           <li> <a href="at.html">ADVENTURES TOURS</a></li>
+           <li> <a href="events.html">EVENTS</a> </li>
+           <li> <a href="sales.html">SALES</a> </li>
+           <li> <a href="services.html">SERVICES</a> </li>
+           <li> <a href="contact.html">CONTACT</a></li>
+         </ul>
+
+       </nav>
+
+   </header>
+
+<main id="registration">
+    <form action="thanks.php" method="get">
+        <div id="headings">
+            <h1>Cycle the Continental Divide</h1>
+            <h2>Registration Form</h2>
+        </div>
+        <div id="formContainer">
+            <fieldset>
+                <legend>Basic Rider Information</legend>
+                <div class="formFlex">
+                    <label for="firstname" class="required"><i class="fa fa-asterisk"></i>First name:</label>
+                    <input name="firstname" type="text" pattern="[a-zA-Z-]{2,}" required>
+                </div>
+                <div class="formFlex">
+                    <label for="lastname" class="required"><i class="fa fa-asterisk"></i>Last name:</label>
+                    <input name="lastname" type="text" pattern="[a-zA-Z-]{2,}" required>
+                </div>
+                <div class="formFlex">
+                    <label for="birthday" class="required"><i class="fa fa-asterisk"></i>Birth date:</label>
+                    <input name="birthday" type="date" required>
+                </div>
+                <div>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="formFlex">
+                    <label for="address" class="required"><i class="fa fa-asterisk"></i>Address:</label>
+                    <input name="address" type="text" required>
+                </div>
+                <div class="formFlex">
+                    <label for="city" class="required"><i class="fa fa-asterisk"></i>City:</label>
+                    <input name="city" type="text" required>
+                </div>
+                <div class="formFlex">
+                    <label for="state" class="required"><i class="fa fa-asterisk"></i>State:</label>
+                    <input name="state" type="text" pattern="[A-Z]{2,2}" placeholder="XX" required>
+                </div>
+                <div class="formFlex">
+                    <label for="country" class="required"><i class="fa fa-asterisk"></i>Country:</label>
+                    <input name="country" type="text" pattern="[A-Za-z-\s]{5,}" required>
+                </div>
+                <div class="formFlex">
+                    <label for="zip" class="required"><i class="fa fa-asterisk"></i>Zip Code:</label>
+                    <input name="zip" type="text" pattern="(\d{5}([\-]\d{4})?)" required>
+                </div>
+                <div class="formFlex">
+                    <label for="phone" class="required"><i class="fa fa-asterisk"></i>Phone number:</label>
+                    <input name="phone" type="text" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx" required>
+                </div>
+                <div class="formFlex">
+                    <label for="email" class="required"><i class="fa fa-asterisk"></i>Email address:</label>
+                    <input type="email" name="email" required>
+                </div>
+            </fieldset>
+            <fieldset id="misc">
+                <legend>Misc. Information</legend>
+                <div>
+                    <label for="teeStyle" class="required"><i class="fa fa-asterisk"></i>T-shirt style:</label><br>
+                    <input type="radio" name="teeStyle" value="mens">Men's (crew neck)
+                    <input type="radio" name="teeStyle" value="womens">Women's (v-neck)
+                </div>
+                <div>
+                    <label for="teeSize" class="required"><i class="fa fa-asterisk"></i>T-shirt size:</label><br>
+                    <input type="radio" name="teeSize" value="xs">XS
+                    <input type="radio" name="teeSize" value="s">S
+                    <input type="radio" name="teeSize" value="m">M
+                    <input type="radio" name="teeSize" value="l">L
+                    <input type="radio" name="teeSize" value="xl">XL
+                    <input type="radio" name="teeSize" value="xxl">XXL
+                </div>
+                <div>
+                    <label for="message">Special Accommodations/Comments:</label><br>
+                    <textarea name="message"></textarea>
+                </div>
+            </fieldset>
+            <div>
+                <div id="regButton">
+                    <input type="submit" value="Register Now">
+                </div>
+            </div>
+        </div>
+    </form>
+</main>
+
+
+
+
+
+</body>
+
+
+
+
+
+   <footer>
+     <section class="contact">
+       The Mountain Spoke info. <br>
+       999.999.9999 <br>
+       3950 Valley Commons Driveb Bozeman, MT<br>
+       Google Map
+     </section>
+     <section class="footer-bar">&copy;2018 | All Rights Reserved |TheMountainSpoke.com | <span id="currentdate"><script src="scripts/currentdate.js"></script></span>
+     </section>
+   </footer>
